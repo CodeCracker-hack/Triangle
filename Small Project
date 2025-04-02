@@ -7,7 +7,7 @@ int main(int argc, char const *argv[])
   printf("if you want a triangle write 'Y'or for reverse write 'R'\n");
   printf("Please enter tour choice: ");
   scanf("%c", &ch);
-  printf("Ok,tell the height in number of lines: ");
+  printf("Ok,tell the height in numbers of lines: ");
   scanf("%d", &a);
   //for Triangle
   if (ch == 'Y' || ch == 'y')
