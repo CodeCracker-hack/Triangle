@@ -1,0 +1,38 @@
+#include <stdio.h>
+int main(int argc, char const *argv[])
+{
+  char ch;
+  int a;
+  printf("What you want to Print a * to form a Triangal or Reverse Triangle\n");
+  printf("if you want a triangle write 'Y'or for reverse write 'R'\n");
+  printf("Please enter tour choice: ");
+  scanf("%c", &ch);
+  printf("Ok,tell the height in number of lines: ");
+  scanf("%d", &a);
+  //for Triangle
+  if (ch == 'Y' || ch == 'y')
+  {
+    for (int i = 1; i <= a; i++)
+    {
+      for (int j = 1; j <= i; j++)
+      {
+        printf("*");
+      }
+      printf("\n");
+    }
+  }
+  //for reverse Triangle
+  if (ch == 'R' || ch == 'r')
+  {
+    for (int i = 1; i <= a; i++)
+    {
+      for (int j = 1; j <= a - i + 1; j++)
+      {
+        printf("*");
+      }
+      printf("\n");
+    }
+  }
+
+  return 0;
+}
